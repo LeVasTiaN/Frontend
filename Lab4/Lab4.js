@@ -46,13 +46,13 @@ function ChangeSize(e) {
     if (e == 1) {
         let image = document.querySelectorAll('img');
         image.forEach( img => {
-            img.style.width = img.offsetWidth + 10;
+            img.style.width = (img.offsetWidth + 10) + "px";
         });
     }
     else if (e == 0) {
         let image = document.querySelectorAll('img');
         image.forEach( img => {
-            img.style.width = img.offsetWidth - 10;
+            img.style.width = (img.offsetWidth - 10) + "px";
         });
     };
 }
