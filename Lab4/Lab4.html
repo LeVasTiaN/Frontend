@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <title>Лаврик С.М. ІМ-32</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Лабораторна робота №4">
+        <meta name="keywords" content="Frontend, KPI, Lab, Work, 4, Lavryk">
+        <link rel="stylesheet" href="Lab4.css">
+    </head>
+    <body>
+        <h2>ПІБ: Лаврик Севастьян Миколайович</h2>
+        <p>Дата та місце народження: 15.10.2005, Харків.</p>
+        <p>Освіта: Технічний ліцей КПІ -> Київський Політехнічний Інститут</p>
+
+        <p>Хобі:</p>
+        <ul>
+            <li id="element5" onclick="ChangeColorOfFirstElement()">Читання</li>
+            <li id="element6" onclick="ChangeColorOfSecondElement()">Спорт</li>
+            <li>Програмування</li>
+        </ul>
+        <p>Улюблені фільми:</p>
+        <ol>
+            <li>Оселя Зла</li>
+            <li>Месники: Фінал</li>
+            <li>Барбі</li>
+        </ol>
+
+        <p>Амстерда́м (нід. Amsterdam) — столиця Нідерландів. Розташований у провінції Північна Голландія в гирлі річки Амстел. Амстердам сполучений з Північним морем морським каналом. Амстердам розташований на північному заході Нідерландів у провінції Північна Голландія в гирлі річки Амстел на березі затоки Ейсселмер. Амстел, протікаючи амстердамським середмістям, утворює мережу каналів і проток, крім того, окремим каналом місто з'єднане з Північним морем, притому перебуваючи на висоті 2 метри нижче від рівня моря.</p>
+        <div>
+            <div id="images">
+                <img class="imgElement" src="https://feerie.com.ua/sites/default/files/styles/for_blog/public/2019-03/s1200%20%2835%29.jpeg?itok=Hz5WaTO6" alt="">
+            </div>
+            
+            <div id="buttons">
+                <input type="file" id="uploadImage" accept="image/*">
+                <button id="addImage" onclick="document.getElementById('uploadImage').click()">add</button>
+                <button id="increaseSize" onclick="ChangeSize(1)">increase</button>
+                <button id="decreaseSize" onclick="ChangeSize(0)">decrease</button>
+                <button id="deleteImage" onclick="DeleteFile()">delete</button>
+            </div>
+        </div>
+
+        <script src="Lab4.js"></script>
+
+    </body>
+</html>

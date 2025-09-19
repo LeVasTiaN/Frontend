@@ -1,0 +1,13 @@
+input {
+    display: none;
+}
+
+#buttons {
+    margin-top: 50px;
+}
+
+img {
+    margin-top: 20px;
+    width: 400px;
+    display: block;
+}
