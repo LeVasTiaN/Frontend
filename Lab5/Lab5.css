@@ -1,0 +1,76 @@
+#task1 {
+    width: 1000px;
+}
+
+#formDiv {
+    margin-right: 50px;
+    width: 350px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: top;
+}
+
+#infoTable {
+    display:none;
+}
+
+.form {
+    display: block;
+    text-align: center;
+    width: 300px;
+    height: 40px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    margin: 10px 0;
+}
+
+.form:focus-visible {
+    border: none;
+}
+
+.invalid {
+    border: 2px solid red;
+}
+
+.invalid:focus {
+    outline: none;
+    border: 3px solid red !important;
+}
+
+.invalid::placeholder {
+    color: red;
+}
+
+
+#submitForm {
+    width:300px;
+    height:40px;
+    margin: 20px 0;
+    border: 2px solid grey;
+    border-radius: 20px;;
+}
+
+#submitForm:hover {
+    background-color: #adadad;
+}
+
+
+/*----------------------------------------------------------------------------------------------------------*/
+
+
+#colorInput {
+    width: 317.6px;
+    margin: 30px 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    user-select: none;
+}

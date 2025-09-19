@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <title>Лаврик С.М. ІМ-32</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Лабораторна робота №5">
+        <meta name="keywords" content="Frontend, KPI, Lab, Work, 5, Lavryk">
+        <link rel="stylesheet" href="Lab5.css">
+        <script src="Lab5.js"></script>
+    </head>
+    <body>
+        <div id="task1">
+            <form name="infoForm" onsubmit="return false" method="post" id="formDiv">
+                <h2>Форма для заповнення</h2>
+                <input class="form" type="text" name="fName" placeholder="ПІБ (Т* Т.Т.)">
+                <input class="form" type="text" name="fID" placeholder="ID-card (ТТ №ЧЧЧЧЧЧ)">
+                <input class="form" type="text" name="fFaculty" placeholder="Факультет (ТТТТ)">
+                <input class="form" type="date" name="fDate">
+                <input class="form" type="text" name="fAddress" placeholder="Адреса (м. Т*)">
+                <input type="submit" id="submitForm" onclick="return formValidation()">
+            </form>
+            <div id="infoTable">
+                <h2>Отримана інформація про користувача</h2>
+            </div>
+        </div>
+        <div id="task2">
+            <input type="color" id="colorInput">
+            <table>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td onmouseover="randomRGB(this)" onclick="changeColorOnClick(this)" ondblclick="changeColorOnDblClick()">4</td>
+                    <td>5</td>
+                    <td class="dblClick">6</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td class="dblClick">11</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td class="dblClick">16</td>
+                    <td>17</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>20</td>
+                    <td class="dblClick">21</td>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td class="dblClick">26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td class="dblClick">31</td>
+                    <td>32</td>
+                    <td>33</td>
+                    <td>34</td>
+                    <td>35</td>
+                    <td>36</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
