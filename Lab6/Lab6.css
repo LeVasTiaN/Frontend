@@ -1,0 +1,22 @@
+.userDIV {
+    width: 250px;
+    height: 450px;
+    display: inline-block;
+}
+
+.userImg {
+    display: block;
+    width: 250px;
+}
+
+.userInfo {
+    margin: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #343a40;
+    color: white;
+    border-bottom: 1px solid white;
+    box-sizing: border-box;
+}
