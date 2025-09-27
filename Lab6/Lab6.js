@@ -11,7 +11,6 @@ function getInfo() {
             "postcode": info["location"]["postcode"],
             "phone": info["phone"]
         };
-        console.log(userInfo);
         outputUser(userInfo);
     })
     .catch(err => {
@@ -23,13 +22,13 @@ function getInfo() {
 function outputUser(user) {
     let container = document.getElementById('userTable');
 
-    container.innerHTML +=`  <div class="userDIV">
-                            <img class="userImg" src="${user["picture"]}">
-                            <p class="userInfo">${user["name"]}</p>
-                            <p class="userInfo">${user["city"]}</p>
-                            <p class="userInfo">${user["postcode"]}</p>
-                            <p class="userInfo">${user["phone"]}</p>
-                        </div>`
+    container.innerHTML +=` <div class="userDIV">
+                                <img class="userImg" src="${user["picture"]}">
+                                <p class="userInfo">${user["name"]}</p>
+                                <p class="userInfo">${user["city"]}</p>
+                                <p class="userInfo">${user["postcode"]}</p>
+                                <p class="userInfo">${user["phone"]}</p>
+                            </div>`
 }
 
 function deleteUser() {
