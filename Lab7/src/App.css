@@ -1,0 +1,39 @@
+.App {
+  padding: 8px;
+}
+
+.images img {
+  margin-top: 20px;
+  display: block;
+}
+
+.buttons {
+  margin-top: 50px;
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  display: none;
+}
+
+.goods-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.goods-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+}
+
+.goods-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
