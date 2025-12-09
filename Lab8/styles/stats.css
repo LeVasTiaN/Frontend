@@ -1,7 +1,9 @@
 .stats {
     height:300px;
     display:flex;
-    justify-content: center;
+    width:1260px;
+    max-width: 100%;
+    margin:0 auto;
 }
 .stat {
     display:block;

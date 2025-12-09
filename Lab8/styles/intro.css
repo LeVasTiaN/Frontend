@@ -1,6 +1,8 @@
 .intro {
     display:flex;
-    justify-content: center;
+    width:1260px;
+    max-width: 100%;
+    margin:0 auto;
     height:960px;
 }
 .intro-left-column {

@@ -1,7 +1,9 @@
 .services {
-    height: 820px;
     display: flex;
-    justify-content: center;
+    height: 820px;
+    width:1260px;
+    max-width: 100%;
+    margin:0 auto;
     padding-top: 55px;
 }
 
