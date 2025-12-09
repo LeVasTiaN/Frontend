@@ -4,8 +4,10 @@
     margin: 0;
 }
 main {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
     font-family: sans-serif;
-    background-image:url("files/image_2025-12-05_23-01-41.png");
     background-size: cover;
     padding:0 130px;
 }
@@ -21,6 +23,7 @@ button {
 .header {
     display: flex;
     height:85px;
+    width:100%;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -237,17 +240,245 @@ button {
 /*-------SERVICES SECTION-------*/
 
 .services {
-    height:880px;
+    height: 820px;
+    display: flex;
+    justify-content: center;
+    padding-top: 55px;
+}
+
+.services-left-column {
+    width: 650px;
+    height:100%;
+    padding-top:85px;
+    box-sizing: border-box;
+}
+
+.services-left-column .sub-title {
+    color: grey;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.services-left-column h2 {
+    width:400px;
+    font-size: 38px;
+    line-height: 43px;
+    color: #000839;
+}
+
+.services-left-column p {
+    width:390px;
+    margin-top: 13px;
+    font-size: 20px;
+    line-height: 1.6;
+    color: grey;
+}
+
+.service-list {
+    padding: 0;
+    margin-top: 25px;
+    list-style: none;
+}
+
+.service-list li {
+    font-size: 20px;
+    margin-bottom: 6px;
+    margin-left:5px;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.service-list li::before {
+    content: "✓"; 
+    color: blue;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.services-left-column button {
+    margin-top: 50px;
+    height: 55px;
+    width: 165px;
+    border-radius: 28px;
+    font-size: 20px;
+    color: white;
+    background-color: blue;
+    border: none;
+}
+
+.services-right-column {
+    width: 610px;
+    height: 725px;
+    position:relative;
+    background-color: #e8dcc4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.services-right-column::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: -65px; 
+    left: -65px;
+    width: 54%; 
+    height: 53%;
+    background-image: radial-gradient(circle, #b0b0b0 2px, transparent 2.5px);
+    background-size: 11px 11px; 
+}
+
+.services-right-column img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.background {
+    position:absolute;
+    width:100%;
+    height:116%;
+    background-color:#f8f9fb;
+    z-index: -3 ;
 }
 
 /*-------SLIDES SECTION-------*/
 
 .slide {
-    height:480px;
+    width:100%;
+    height: 490px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.arrow-left, .arrow-right {
+    font-size: 30px;
+    color: grey;
+    cursor: pointer;
+}
+
+.testimonial-content {
+    width: 700px;
+    height:100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial-content img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 80px;
+}
+
+.quote-text {
+    width:550px;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #555;
+    margin-top: 20px;
+}
+
+.author {
+    margin-top: 22px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #000839;
+}
+
+.role {
+    font-size: 18px;
+    color: grey;
+    margin-top: 3px;
+}
+
+.dots {
+    margin-top: 58px;
+    display: flex;
+    gap: 13px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot.active {
+    background-color: blue;
 }
 
 /*-------FOOTER SECTION-------*/
 
 footer {
-    height:550px;
+    height: auto;
+    padding-bottom: 60px;
+    text-align: center;
+    padding-top: 85px;
+    background-color: #f8f9fb;
+}
+
+footer .sub-title {
+    color: grey;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+footer h2 {
+    font-size: 36px;
+    margin-top: 4px;
+    color: #000839;
+}
+
+.blog-container {
+    margin-top:60px;
+    height:300px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.blog-card {
+    width: 18%;
+    text-align: left;
+    background-color: white;
+    border-radius: 20px;
+    padding: 37px 20px 0 24px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.blog-card .date {
+    font-size: 13px;
+    color: grey;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.blog-card h3 {
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 9px;
+    color: #000839;
+}
+
+.blog-card p {
+    font-size: 18px;
+    line-height: 28px;
+    color: grey;
 }
