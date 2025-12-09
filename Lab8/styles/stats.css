@@ -1,0 +1,21 @@
+.stats {
+    height:300px;
+    display:flex;
+    justify-content: center;
+}
+.stat {
+    display:block;
+    max-width:315px;
+    text-align:center;
+}
+.stat h1 {
+    padding-top:90px;
+    font-size:50px;
+}
+.stat p {
+    padding-top:14px;
+    font-size:20px;
+}
+.stat p:last-child {
+    color:grey;
+}

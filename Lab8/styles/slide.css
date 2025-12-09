@@ -1,0 +1,71 @@
+.slide {
+    width:100%;
+    height: 490px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.arrow-left, .arrow-right {
+    font-size: 30px;
+    color: grey;
+    cursor: pointer;
+}
+
+.testimonial-content {
+    width: 700px;
+    height:100%;
+    margin: 0 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial-content img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 80px;
+}
+
+.quote-text {
+    width:550px;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #555;
+    margin-top: 20px;
+}
+
+.author {
+    margin-top: 22px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #000839;
+}
+
+.role {
+    font-size: 18px;
+    color: grey;
+    margin-top: 3px;
+}
+
+.dots {
+    margin-top: 58px;
+    display: flex;
+    gap: 13px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot.active {
+    background-color: blue;
+}

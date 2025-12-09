@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+}
+main {
+    display:flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    background-size: cover;
+    padding:0 130px;
+}
+a {
+    text-decoration: none;
+}
+button {
+    cursor:pointer;
+}

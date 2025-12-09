@@ -1,0 +1,89 @@
+.intro {
+    display:flex;
+    justify-content: center;
+    height:960px;
+}
+.intro-left-column {
+    height:100%;
+    width:590px;
+}
+.intro-left-column h1 {
+    margin-top:150px;
+    font-size:62px;
+}
+.intro-left-column > p {
+    margin-top: 27px;
+    font-size: 20px;
+    line-height: 1.6;
+}
+.intro-left-column button {
+    margin-top: 25px;
+    height: 55px;
+    width: 165px;
+    border-radius: 28px;
+    font-size:20px;
+    color:white;
+    background-color:blue;
+}
+.high-quality-div {
+    margin-top:50px;
+    display:flex;
+    height:300px;
+    width:100%;
+}
+.quality {
+    height:100%;
+    width:280px;
+}
+.high-quality-div img {
+    height:80px;
+}
+.high-quality-div h3 {
+    margin-top:18px;
+    letter-spacing: 1px;
+}
+.high-quality-div p {
+    margin-top: 15px;
+    line-height: 25px;
+    word-spacing: 0.8px;
+    letter-spacing: 0.7px;
+}
+.intro-right-column {
+    height:100%;
+    width:670px;
+}
+.quote {
+    color: white;
+    background-color: #000839;
+    font-size: 20px;
+    padding: 60px 20px 20px 55px;
+    line-height: 32px;
+    box-sizing: border-box;
+    margin-top: 590px;
+    width: 610px;
+    height: 295px;
+}
+.quote h4 {
+    padding-top:20px;
+}
+.quote::before {
+    content:url("../files/woman-image.jpg");
+    display:inline-block;
+    content-visibility: auto;
+    z-index: -1;
+    position:absolute;
+    top:170px;
+    width:615px;
+    height:780px;
+}
+.quote::after {
+    content:"";
+    display:inline-block;
+    background-color: #dae1e7;
+    position:relative;
+    top:-430px;
+    left:310px;
+    width:435px;
+    height:560px;
+    z-index: -2;
+}

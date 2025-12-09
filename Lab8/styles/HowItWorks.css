@@ -1,0 +1,58 @@
+.HowItWorks {
+    margin: 0 auto;
+    height:545px;
+}
+
+.HowItWorks > p {
+    display: flex;
+    text-align: center;
+    height: 265px;
+    font-size: 37px;
+    color: black;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+.HowItWorks > p > span {
+    padding-right:110px;
+    width:630px;
+}
+.HowItWorks > p:before {
+    content: "How it works";
+    width:100px;
+    position: relative;
+    top: -75px;
+    left: 370px;
+    color: grey;
+    font-size: 16px;
+}
+.instructions {
+    display:flex;
+    align-items: center;
+}
+.instructions > img {
+    margin-top: 60px;
+    margin-right: 20px;
+    width: 115px;
+    height: 60px;
+}
+.instructions > img:last-of-type {
+    transform: rotateX(180deg);
+}
+.step {
+    max-width:300px;
+}
+.step img {
+    margin-top:20px;
+    width:70px;
+}
+.step p:first-of-type {
+    font-size:20px;
+    margin-top:20px;
+}
+.step p:last-child {
+    font-size: 20px;
+    margin-top: 11px;
+    letter-spacing: 0.5px;
+    line-height: 31px;
+}
