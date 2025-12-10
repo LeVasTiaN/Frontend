@@ -8,10 +8,15 @@
     position: relative;
 }
 
-.arrow-left, .arrow-right {
+.slide-arrow {
     font-size: 30px;
     color: grey;
     cursor: pointer;
+    transform:scale(1);
+    transition: transform 0.3s ease;
+}
+.slide-arrow:hover {
+    transform:scale(1.3);
 }
 
 .testimonial-content {

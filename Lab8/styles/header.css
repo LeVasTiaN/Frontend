@@ -18,7 +18,7 @@
     color: blue;
 }
 .menu {
-    margin-left: 90px;
+    margin:0 auto;
     font-size: 20px;
     height: 100%;
     width: 500px;
@@ -66,15 +66,13 @@
     top: 100%;
     left: 0;
     width: 200px;
-    background-color: white;
+    background-color: lightgrey;
     box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
-    
     display: none;      
     opacity: 0;
-    
     flex-direction: column;
     align-items: flex-start;
-    padding: 10px 0;
+    padding: 0;
     z-index: 10;
 }
 
@@ -101,4 +99,24 @@
 
 .dropdown-menu li:hover {
     background-color: #f8f9fb;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: blue;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
 }

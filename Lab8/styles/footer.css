@@ -38,6 +38,12 @@ footer h2 {
     padding: 37px 20px 0 24px;
     box-sizing: border-box;
     overflow: hidden;
+    transform:scale(1);
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+    transform:scale(1.1);
 }
 
 .blog-card .date {
