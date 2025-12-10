@@ -74,3 +74,36 @@
 .dot.active {
     background-color: blue;
 }
+
+/* Animation classes that JS will add */
+.slide-in-right {
+    animation: slideInRight 0.5s ease-out forwards;
+}
+
+.slide-in-left {
+    animation: slideInLeft 0.5s ease-out forwards;
+}
+
+/* Keyframes for sliding IN from the RIGHT */
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px); /* Start 100px to the right */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* End in the center */
+    }
+}
+
+/* Keyframes for sliding IN from the LEFT */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px); /* Start 100px to the left */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* End in the center */
+    }
+}
