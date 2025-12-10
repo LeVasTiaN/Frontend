@@ -1,0 +1,185 @@
+@media screen and (max-width: 992px) {
+
+    .header {
+        /* Allow height to grow with content */
+        height: auto;
+        /* Stack Logo, Menu, and Button vertically */
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    /* Reset the Logo positioning */
+    .header span {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px; /* Space below logo */
+        height: auto;
+    }
+
+    /* Transform the horizontal menu into a vertical list */
+    .menu {
+        width: 100%;
+        height: auto;
+        margin-left: 0; /* Remove the large desktop margin */
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .menu li {
+        margin: 10px 0; /* Add breathing room between links */
+        font-size: 18px; /* Slightly easier to read on mobile */
+    }
+
+    /* Center and space the button */
+    .templates-button {
+        width: auto;
+        height: auto;
+        margin-top: 20px;
+    }
+    
+    .templates-button button {
+        width: 200px; /* Give it a nice clickable width */
+    }
+
+    .intro {
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 50px;
+        width: 100%;
+    }
+
+    .intro-right-column {
+        display: none;
+    }
+
+    .intro-left-column {
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .high-quality-div {
+        justify-content: center;
+    }
+
+    .stats {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .stat {
+        width: 100%;
+    }
+
+    .HowItWorks {
+        height: auto;
+    }
+
+    .HowItWorks > p {
+        font-size: 24px;
+        height: auto;
+        padding: 30px 20px;
+        flex-direction: column;
+    }
+    
+    .HowItWorks > p > span {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .HowItWorks > p:before {
+        position: static;
+        margin-bottom: 15px;
+    }
+
+    .instructions {
+        flex-direction: column;
+    }
+
+    .instructions > img {
+        display: none;
+    }
+
+    .step {
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        text-align: center;
+        width: 90%;
+        margin-bottom: 40px;
+    }
+
+    .services {
+        text-align: center;
+        height: auto;
+        padding-bottom: 50px;
+        flex-direction: column;
+    }
+
+    .services-right-column {
+        display: none;
+    }
+
+    .services-left-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 50px 20px 0 20px;
+    }
+    
+    .service-list li {
+        justify-content: center;
+    }
+    
+    .services .background {
+        display: none;
+    }
+
+    .slide {
+        height: auto;
+        padding: 60px 0;
+        flex-direction: column;
+    }
+
+    .testimonial-content {
+        width: 90%;
+    }
+    
+    .quote-text {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .arrow-left, .arrow-right {
+        display: none;
+    }
+
+    footer {
+        padding-top: 50px;
+    }
+
+    .blog-container {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .blog-card {
+        max-width: 100%;
+        width: 60%;
+        margin-bottom: 30px;
+        height: auto;
+        padding-bottom: 20px;
+        background-color: #f8f9fb;
+    }
+
+    .footer-background {
+        display:none;
+    }
+}
